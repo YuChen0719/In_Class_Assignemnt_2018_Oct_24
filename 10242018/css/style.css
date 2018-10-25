@@ -1,0 +1,60 @@
+h1 {
+    animation-name: bounceIn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.GeneralDiv {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+      
+}
+
+.GeneralDiv .Text{
+      backface-visibility: hidden;
+      line-height: 150px;
+      text-align: center;
+      transform: rotateY(180deg);
+    font-size: 5rem;
+}
+
+.GeneralDiv .Image{
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 25rem;
+}
+
+.GeneralDiv:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*.abc:hover{
+    animation-duration: 2s;
+    animation-name: bounceIn;
+}*/
+
+
